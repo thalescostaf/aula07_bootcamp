@@ -1,6 +1,6 @@
 import csv
 
-path_arquivo = 'produtos.csv'
+path_arquivo = 'vendas.csv'
 
 def ler_csv(nome_do_arquivo_csv: str) -> list[dict]:
     '''
@@ -20,7 +20,7 @@ def filtrar_produtos(lista: list[dict]) -> list[dict]:
     '''
     lista_produtos_filtrados = []
     for item in lista:
-        if item.get('Bike') == 'True':
+        if item.get('False') == 'True':
             lista_produtos_filtrados.append(item)
     return lista_produtos_filtrados
 
